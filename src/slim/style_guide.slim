@@ -1,0 +1,475 @@
+doctype html
+/[if IE 8]>
+  html.lt-ie10.ie8 lang="ja"
+/[if IE 9]>
+  html.lt-ie10.ie9" lang="ja"
+/[if gt IE 9]
+  html
+/[endif]
+  head
+    meta charset="UTF-8"
+    title CSS Scaffold LIBRARY
+  /[if lt IE 9]
+    script src="//html5shiv.googlecode.com/svn/trunk/html5.js"
+    javascript:
+      window.html5 || document.write('<script src="javascripts/html5shiv.js?pre3.5"></scr' + 'ipt>');
+  link charset='utf-8' href='css/application.css' rel='stylesheet' type='text/css'
+
+  body
+    .container
+      h1 Style Guide
+
+      section
+        h2 Typography
+
+        h3 Font Stacks
+        p
+          | "Helvetica Neue", Helvetica, tahoma, arial, sans-serif
+          br
+          | Georgia, Times, "Times New Roman", serif
+
+        h3 Headings
+        figure
+          h1 &lt;h1&gt;Maecenas faucibus mollis interdum.
+          h2 &lt;h2&gt;Maecenas faucibus mollis interdum.
+          h3 &lt;h3&gt;Maecenas faucibus mollis interdum.
+          h4 &lt;h4&gt;Maecenas faucibus mollis interdum.
+          h5 &lt;h5&gt;Maecenas faucibus mollis interdum.
+          h6 &lt;h6&gt;Maecenas faucibus mollis interdum.
+
+        h3 Text Elements
+        p
+          | The
+          a href="" a element
+          | example
+
+        p
+          |T he
+          abbr abbr element
+          | and an
+          abbr title="Abbreviation" abbr element
+          | with title examples
+
+        p
+          | The
+          b b element
+          | example
+
+        p
+          | The
+          cite cite element
+          | example
+
+        p
+          | The
+          code code element
+          | example
+
+        p
+          | The
+          em em element
+          | example
+
+        p
+          | The
+          del del element
+          | example
+
+        p
+          | The
+          dfn dfn element
+          | and
+          dfn title="Title text" dfn element
+          | with title examples
+
+        p
+          | The
+          i i element
+          |  example
+
+        p
+          | The
+          ins ins element
+          | example
+
+        p
+          | The
+          kbd kbd element
+          | example
+
+        p
+          | The
+          mark mark element
+          | example
+
+        p
+          | The
+          q q element
+          | example
+
+        p
+          | The
+          q
+            | q element
+            q inside
+            |  a q element
+          |  example
+
+        p
+          | The
+          s s element
+          | example
+
+        p
+          | The
+          samp samp element
+          | example
+
+        p
+          | The
+          small small element
+          | example
+
+        p
+          | The
+          span span element
+          | example
+
+        p
+          | The
+          strong strong element
+          |  example
+
+        p
+          | The
+          sub sub element
+          |  example
+
+        p
+          | The
+          sup sup element
+          |  example
+
+        p
+          | The
+          u u element
+          |  example
+
+        p
+          | The
+          var var element
+          | example
+
+        h3 Anchors
+        ul
+          li: a href="http://google.com" Text Anchor
+          li
+            a.nav href="http://google.com" Navigation Anchor
+            br
+            | Use "
+            code .nav
+            | " or "
+            code
+              | @extend %nav-anchor;
+            |"
+          li
+            a.text-ui href="http://google.com" Site-Interface Anchor
+            br
+            | Use "
+            code .text-ui
+            | " or "
+            code
+              | @extend %ui-anchor;
+            |"
+
+        h3 list
+        h4 Unordered list
+        ul
+          li a
+          li b
+          li c
+          li d
+        h4 Ordered List
+        ol
+          li 1
+          li 2
+          li 3
+        h4 Definition List
+        dl
+          dt Fringilla
+          dd Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.
+          dt Bibendum
+          dd Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          dt Fermentum Ridiculus
+          dd Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+      section
+        h2 Table
+        table
+          thead
+            tr
+              - for item in 1..6 do
+                th thead heading
+          tbody
+            -for item in 1..5 do
+              tr
+                th tbody head
+                - for item in 1..4 do
+                  td cell content
+                td.number $30,000
+
+          tfoot
+            tr
+              th tfoot heading
+              - for item in 1..4 do
+                td tfoot content
+              td.number $0,000
+
+      section
+        h2 Form Interface
+        form
+          fieldset
+            legend Legend
+            label for="" class="field-label">Field Label
+            input type="text"
+
+            label for=""Field Label
+            textarea name="" id="" cols="30" rows="10"
+
+            label for=""
+              input type="checkbox"
+              | checkbox
+            label for=""
+              input type="checkbox"
+              | checkbox
+            label for=""
+              input type="checkbox"
+              | checkbox
+            label for=""
+              input type="radio"
+              | checkbox
+            label for=""
+              input type="radio"
+              | checkbox
+            label for=""
+              input type="radio"
+              | checkbox
+            select name="" id=""
+              option value="" Select Box
+
+      section
+        h2 Buttons
+        h3 No Class
+        input type="submit" value="Submit"
+        input type="reset" value="Clear"
+        input type="submit" value="Submit" disabled=true
+        button type="submit"
+          | Button type="submit"
+        button type="submit" disabled=true
+          | Button type="submit"
+        button type="button"
+          |Button type="button"
+
+        h3 .btn
+        input.btn type="submit" value="Input.btn"
+        input.btn type="submit" value="Input.btn[:disabled]" disabled=true
+        button.btn type="button" class="btn" button.btn
+        button.btn type="button" class="btn" disabled=true button.btn[:disabled]
+        a.btna href="" .btn
+        a.btn.disabled a.btn.disabled
+
+        h3 .btn.submit
+        p
+          input.btn.submit type="submit" value="Input.btn.submit"
+          input.btn.submit type="submit" value="Input.btn[:disabled]" disabled=true
+        p
+          button.btn.submit type="submit" button.btn.submit</button>
+          button.btn.submit type="button" disabled=true button.btn.submit[:disabled]
+        p
+          a.btn.submit href="" a.btn.submit
+          a.btn.submit.disabled href="" a.btn.submit.disabled
+
+        h3 .btn.cancel
+        button.btn.cancel button.btn.cancel
+        a.btn.cancel href="" .btn.cancel
+
+        h3 button.btn + icon
+        button.btn.submit type="submit"
+          i.home
+          span.cmd-label Submit
+        button.btn.is-ico-rside type="reset"
+          span.cmd-label Clear
+          i.home
+        a.btn href=""
+          i.home
+          span.cmd-label Submit
+
+      section
+        h2 Horizontal Layouts
+        h3 %horizontal_list
+        ul.horizontal
+          li 1
+          li: a href="" 2
+          li 3
+          li 4
+
+        h3 %horizontal_definition
+        dl.horizontal-dl
+          dt Porta
+          dd Cras mattis
+          dt Aenean Condimentum
+          dd Cras mattis
+          dt Condimentum
+          dd Cras mattis consectetur
+
+        h3 @include variable-horizontal(li, top, left)
+        ul.horizontal-layout-top
+          li 1
+          li: a href="" 2
+          li 3
+          li 4
+
+        h3 @include variable-horizontal(div, middle, center)
+        .horizontal-layout-middle
+          div 1
+          div: a href="" 2
+          div 3
+          div 4
+
+        h3 @include variable-horizontal(div, bottom, right)
+        .horizontal-layout-bottom
+          div 1
+          div: a href="" 2
+          div 3
+          div 4
+
+        h3 @include justified-horizontal(div)
+        .justified-horizontal
+          div 1
+          div: a href="" 2
+          div 3
+          div 4
+          div 5
+          div 6
+          .placeholder
+
+      section
+        h2 UI-Navigations
+
+        h3 Table List Menu
+        ul.table-list
+          li
+            a.command href=""
+              i.home
+              span.cmd-label menu1
+          li: a.command href="" menu1
+          li: a.command href="" menu1
+          li: a.command href="" menu1
+
+        h3 Pulldown Menu
+        .pulldown
+          a.trigger.is-ico-rside href=""
+            span.cmd-label Trigger
+            i.home
+
+          .pulldown-area
+            .pulldown-menu
+              a.command href="" menu label
+              a.command href="" menu label
+              a.command href="" menu label
+              a.command href="" menu label
+
+        h3 Centerd horizontal list (example ui-pagenation
+        .pagenation
+          ul
+            li: a.command.current href="">1
+            li: a.command href="" >2
+            li: a.command href="" >3
+            li: a.command href="" >4
+
+        h3 @include segmented-nav('.command')
+        .segmented-nav
+          button.command.current type="button"
+            i.home
+            span.cmd-label .command.current
+          button.command type="button" .command
+          button.command type="button" .command
+          button.command type="button" .command
+
+        h3 Tab
+        h4 div.ui-tab > ul > li > a
+        .tab
+          ul
+            li
+              a.command.current href=""
+                i.home
+                span.cmd-label">TAB_MENU
+            li
+              a.command href=""
+                i.home
+            li
+              a.command.is-ico-rside href=""
+                span.cmd-label TAB_MENU
+                i.home
+            li: a.command href="" TAB_MENU
+            li: a.command href="" TAB_MENU
+
+          .tab-content
+            | タブコンテントです。
+
+        h4 div.ui-tab > a
+        .tab
+          a.command href=""
+            i.home
+            span.cmd-labelTAB_MENU
+
+          a.command href=""
+            i.home
+
+          a.command.is-ico-rside.current href=""
+            span.cmd-labelTAB_MENU
+            i.home
+
+          a.command href="" TAB_MENU
+          a.command href="" TAB_MENU
+
+          .tab-content
+            | タブコンテントです
+
+        h4 div.ui-tab.centered > ul > li > a
+        .tab.centered
+          ul
+            li
+              a.command href=""
+                i.home
+                span.cmd-labelTAB_MENU
+            li
+              a.command.current href=""
+                i.home
+            li
+              a.command.is-ico-rside href=""
+                span.cmd-labelTAB_MENU
+                i.home
+            li: a.command href="" TAB_MENU
+            li: a.command href="" TAB_MENU
+
+          .tab-content
+            | タブコンテントです。
+
+        h4 div.ui-tab.centered > a
+        .tab.centered
+          a.command href=""
+            i.home
+            span.cmd-labelTAB_MENU
+
+          a.command href=""
+            i.home
+
+          a.command.is-ico-rside href=""
+            span.cmd-labelTAB_MENU
+            i.home
+
+          a.command href="" TAB_MENU
+          a.current.command href="" TAB_MENU
+          .tab-content
+            | タブコンテントです。
