@@ -7,17 +7,27 @@ module.exports = function(grunt) {
         }
       }
     },
-
     stylus: {
       app: {
         src : ['src/stylus/*.styl'],
         dest: 'dist/css/application.css'
+      }
+    },
+    watch: {
+      slim: {
+        files: ['src/slim/style_guide.slim'],
+        tasks: ['slim']
+      },
+      stylus: {
+        files: ['src/stylus/*.styl'],
+        tasks: ['stylus']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-slim');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', 'slim');
+  grunt.registerTask('default', ['slim', 'stylus', 'watch']);
 };
