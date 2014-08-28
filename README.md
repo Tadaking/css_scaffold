@@ -1,4 +1,4 @@
-css_caffold
+css_scaffold
 ===========
 
 CSS starter libraries
