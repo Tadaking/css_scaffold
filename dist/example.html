@@ -1,0 +1,501 @@
+<!doctype html>
+<!--[if IE 8]><html class="lt-ie10 ie8" lang="ja"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ja"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>SCSS STARTUP LIBRARY</title>
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script>window.html5 || document.write('<script src="javascripts/html5shiv.js?pre3.5"></scr' + 'ipt>');</script>
+  <![endif]-->
+  <link charset='utf-8' href='css/application.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Style Guide</h1>
+    <section>
+      <h2>Typography</h2>
+
+      <h3>Font Stacks</h3>
+      <p>
+        "Helvetica Neue", Helvetica, tahoma, arial, sans-serif
+        <br>
+        Georgia, Times, "Times New Roman", serif
+      </p>
+
+      <h3>Headings</h3>
+      <figure>
+        <h1>&lt;h1&gt;Maecenas faucibus mollis interdum.</h1>
+        <h2>&lt;h2&gt;Maecenas faucibus mollis interdum.</h2>
+        <h3>&lt;h3&gt;Maecenas faucibus mollis interdum.</h3>
+        <h4>&lt;h4&gt;Maecenas faucibus mollis interdum.</h4>
+        <h5>&lt;h5&gt;Maecenas faucibus mollis interdum.</h5>
+        <h6>&lt;h6&gt;Maecenas faucibus mollis interdum.</h6>
+      </figure>
+
+      <h3>Text Elements</h3>
+      <p>
+        The <a href="http://google.com">element</a> example
+      </p>
+      <p>
+        The <abbr title="">abbr element</abbr>
+        and an
+        <abbr title="Abbreviation">abbr element</abbr> with title examples
+      </p>
+      <p>
+        The <b>b element</b> example
+      </p>
+      <p>
+        The <cite>cite element</cite> example
+      </p>
+      <p>
+        The <code>code element</code> example
+      </p>
+      <p>
+        The <em>em element</em> example
+      </p>
+      <p>
+        The <del>del element</del> example
+      </p>
+      <p>
+        The <dfn>dfn element</dfn> and
+        <dfn title="Title text">dfn element</dfn> with title examples
+      </p>
+      <p>
+        The
+        <i>i element</i> example
+      </p>
+      <p>
+        The
+        <ins>ins element</ins> example
+      </p>
+      <p>
+        The <kbd>kbd element</kbd> example
+      </p>
+      <p>
+        The <mark>mark element</mark> example
+      </p>
+      <p>
+        The element</q>
+        | example
+      </p>
+      <p>
+        The <q>q element</q>
+        <br>
+        <a href=""><q>q inside ement</q></a> example
+      </p>
+      <p>
+        The <s>s element</s> example
+      </p>
+      <p>
+        The <samp>samp element</samp> example
+      </p>
+      <p>
+        The <small>small element</small> example
+      </p>
+      <p>
+        The <span>span element</span> example
+      </p>
+      <p>
+        The <strong>strong element</strong> example
+      </p>
+      <p>
+        The <sub>sub element</sub> example
+      </p>
+      <p>
+        The <sup>sup element</sup> example
+      </p>
+      <p>
+        The <u>u element</u> example
+      </p>
+      <p>
+        The <var>var element</var> example
+      </p>
+
+      <h3>Anchors</h3>
+      <ul>
+        <li><a href="http://google.com">Text Anchor</a></li>
+        <li><a href="http://google.com" class="nav">Navigation Anchor</a></li>
+        <li><a href="http://google.com" class="text-ui">Site-Interface Anchor</a></li>
+      </ul>
+
+      <h3>list</h3>
+      <h4>Unordered list</h4>
+      <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+      </ul>
+      <h4>Ordered List</h4>
+      <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ol>
+      <h4>Definition List</h4>
+      <dl>
+        <dt>Fringilla</dt>
+        <dd>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</dd>
+        <dt>Bibendum</dt>
+        <dd>Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</dd>
+        <dt>Fermentum Ridiculus</dt>
+        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>thead heading</th>
+            <th>thead heading</th>
+            <th>thead heading</th>
+            <th>thead heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>tbody heading</th>
+            <td>tbody cell</td>
+            <td>tbody cell</td>
+            <td class="number">123,456</td>
+          </tr>
+          <tr>
+            <th>tbody heading</th>
+            <td>tbody cell</td>
+            <td>tbody cell</td>
+            <td class="number">123,456</td>
+          </tr>
+          <tr>
+            <th>tbody heading</th>
+            <td>tbody cell</td>
+            <td>tbody cell</td>
+            <td class="number">123,456</td>
+          </tr>
+          <tr>
+            <th>tbody heading</th>
+            <td>tbody cell</td>
+            <td>tbody cell</td>
+            <td class="number">123,456</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>tfoot cell</th>
+            <td>tfoot cell</td>
+            <td>tfoot cell</td>
+            <td class="number">tfoot cell</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Form Interface</h2>
+      <form action="">
+        <fieldset>
+          <legend>Legend</legend>
+          <label for="" class="field-label">Field Label</label><br>
+          <input type="text">
+          <br>
+          <label for="">Field Label</label><br>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <br>
+          <label for="">
+            <input type="checkbox">
+            checkbox
+          </label>
+          <label for="">
+            <input type="checkbox">
+            checkbox
+          </label>
+          <label for="">
+            <input type="checkbox">
+            checkbox
+          </label>
+          <br>
+          <label for="">
+            <input type="radio">
+            checkbox
+          </label>
+          <label for="">
+            <input type="radio">
+            checkbox
+          </label>
+          <label for="">
+            <input type="radio">
+            checkbox
+          </label>
+          <br>
+          <select name="" id="">
+            <option value="">Select Box</option>
+          </select>
+        </fieldset>
+      </form>
+      <ul>
+        <li><a href="example-form-vertical.html">Example vertical layout</a></li>
+        <li><a href="example-form-horizontal.html">Example horizontal layout</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <h3>Normal(no class)</h3>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Submit" disabled>
+        <button type="submit">Button type="submit"</button>
+        <button type="submit" disabled>Button type="submit"</button>
+        <button type="button">Button type="button"</button>
+
+      <h3>.btn</h3>
+      <input type="submit" value="Input.btn" class="btn">
+      <input type="submit" value="Input.btn[:disabled]" class="btn" disabled>
+      <button type="button" class="btn">button.btn</button>
+      <button type="button" class="btn" disabled>button.btn[:disabled]</button>
+      <a href="" class="btn">a.btn</a>
+      <a href="" class="btn disabled">a.btn.disabled</a>
+
+      <h3>.btn.submit</h3>
+      <p>
+        <input type="submit" value="Input.btn.submit" class="btn submit">
+        <input type="submit" value="Input.btn[:disabled]" class="btn submit" disabled>
+      </p>
+      <p>
+        <button type="submit" class="btn submit">button.btn.submit</button>
+        <button type="button" class="btn submit" disabled>button.btn.submit[:disabled]</button>
+      </p>
+      <p>
+        <a href="" class="btn submit">a.btn.submit</a>
+        <a href="" class="btn submit disabled">a.btn.submit.disabled</a>
+      </p>
+
+      <h3>.btn.cancel</h3>
+      <button class="btn cancel">button.btn.cancel</button>
+      <a href="" class="btn cancel">.btn.cancel</a>
+
+      <h3>button.btn + icon</h3>
+      <button type="submit"class="btn submit">
+        <i class="home"></i><span class="cmd-label">Submit</span>
+      </button>
+      <button type="reset" class="btn is-ico-rside">
+        <span class="cmd-label">Clear</span>
+        <i class="home"></i>
+      </button>
+      <a href="" class="btn">
+        <i class="home"></i>
+        <span class="cmd-label">Submit</span>
+      </a>
+    </section>
+
+    <section>
+      <h2>Horizontal Layouts</h2>
+      <h3>%horizontal_list</h3>
+      <ul class="horizontal">
+        <li>1</li>
+        <li><a href="">2</a></li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+
+      <h3>%horizontal_definition</h3>
+      <dl class="horizontal-dl">
+        <dt>Porta</dt>
+        <dd>Cras mattis</dd>
+        <dt>Aenean Condimentum</dt>
+        <dd>Cras mattis</dd>
+        <dt>Condimentum</dt>
+        <dd>Cras mattis consectetur</dd>
+      </dl>
+
+      <h3>@include variable-horizontal(li, top, left)</h3>
+      <ul class="horizontal-layout-top">
+        <li>1</li>
+        <li><a href="">2</a></li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+      <h3>@include variable-horizontal(div, middle, center)</h3>
+      <div class="horizontal-layout-middle">
+        <div>1</div>
+        <div><a href="">2</a></div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <h3>@include variable-horizontal(div, bottom, right)</h3>
+      <div class="horizontal-layout-bottom">
+        <div>1</div>
+        <div><a href="">2</a></div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+
+      <h3>@include justified-horizontal(div)</h3>
+      <div class="justified-horizontal">
+        <div>1</div>
+        <div><a href="">2</a></div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="placeholder"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>UI-Navigations</h2>
+
+      <h3>Table List Menu</h3>
+      <ul class="table-list">
+        <li><a href="" class="command"><i class="home"></i><span class="cmd-label">menu1</span></a></li>
+        <li><a href="" class="command">menu1</a></li>
+        <li><a href="" class="command">menu1</a></li>
+        <li><a href="" class="command">menu1</a></li>
+      </ul>
+
+      <h3>Pulldown Menu</h3>
+      <div class="pulldown">
+        <a href="" class="trigger is-ico-rside">
+          <span class="cmd-label">Trigger</span>
+          <i class="home"></i>
+        </a>
+
+        <div class="pulldown-area">
+          <div class="pulldown-menu">
+            <a href="" class="command">menu label</a>
+            <a href="" class="command">menu label</a>
+            <a href="" class="command">menu label</a>
+            <a href="" class="command">menu label</a>
+          </div>
+        </div>
+      </div>
+
+      <h3>Centerd horizontal list (example ui-pagenation</h3>
+      <div class="pagenation">
+        <ul>
+          <li><a href="" class="command current">1</a></li>
+          <li><a href="" class="command">2</a></li>
+          <li><a href="" class="command">3</a></li>
+          <li><a href="" class="command">4</a></li>
+        </ul>
+      </div>
+
+      <h3>@include segmented-nav('.command')</h3>
+      <div class="segmented-nav">
+        <button type="button" class="command current">
+          <i class="home"></i>
+          <span class="cmd-label">.command.current</span>
+        </button>
+        <button type="button" class="command">.command</button>
+        <button type="button" class="command">.command</button>
+        <button type="button" class="command">.command</button>
+      </div>
+
+      <h3>Tab</h3>
+      <h4>div.ui-tab > ul > li > a</h4>
+      <div class="tab">
+        <ul>
+          <li>
+            <a href="" class="command current">
+              <i class="home"></i>
+              <span class="cmd-label">TAB_MENU</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="command">
+              <i class="home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="command is-ico-rside">
+              <span class="cmd-label">TAB_MENU</span>
+              <i class="home"></i>
+            </a>
+          </li>
+          <li><a href="" class="command">TAB_MENU</a></li>
+          <li><a href="" class="command">TAB_MENU</a></li>
+        </ul>
+
+        <div class="tab-content">
+          タブコンテントです。
+        </div>
+      </div>
+
+      <h4>div.ui-tab > a</h4>
+      <div class="tab">
+        <a href="" class="command">
+          <i class="home"></i>
+          <span class="cmd-label">TAB_MENU</span>
+        </a>
+        <a href="" class="command">
+          <i class="home"></i>
+        </a>
+        <a href="" class="command is-ico-rside current">
+          <span class="cmd-label">TAB_MENU</span>
+          <i class="home"></i>
+        </a>
+        <a href="" class="command">TAB_MENU</a>
+        <a href="" class="command">TAB_MENU</a>
+
+        <div class="tab-content">
+          タブコンテントです。
+        </div>
+      </div>
+
+      <h4>div.ui-tab.centered > ul > li > a</h4>
+      <div class="tab centered">
+        <ul>
+          <li>
+            <a href="" class="command">
+              <i class="home"></i>
+              <span class="cmd-label">TAB_MENU</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="command current">
+              <i class="home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="command is-ico-rside">
+              <span class="cmd-label">TAB_MENU</span>
+              <i class="home"></i>
+            </a>
+          </li>
+          <li><a href="" class="command">TAB_MENU</a></li>
+          <li><a href="" class="command">TAB_MENU</a></li>
+        </ul><div class="tab-content">
+          タブコンテントです。
+        </div>
+      </div>
+
+      <h4>div.ui-tab.centered > a</h4>
+      <div class="tab centered">
+        <a href="" class="command">
+          <i class="home"></i>
+          <span class="cmd-label">TAB_MENU</span>
+        </a>
+        <a href="" class="command">
+          <i class="home"></i>
+        </a>
+        <a href="" class="command is-ico-rside">
+          <span class="cmd-label">TAB_MENU</span>
+          <i class="home"></i>
+        </a>
+        <a href="" class="command">TAB_MENU</a>
+        <a href="" class="current command">TAB_MENU</a>
+        <div class="tab-content">
+          タブコンテントです。
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
